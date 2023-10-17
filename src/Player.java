@@ -18,6 +18,7 @@ public class Player extends Entity {
     }
     @Override
     public int attack(){
-        return 0;
+        if (agility * 3 > (int)(Math.random()*(100+1))) return strength;
+        else return  0;
     }
 }

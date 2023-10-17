@@ -5,6 +5,9 @@ public abstract class Monster extends Entity {
     }
     // @Override
     // protected void move(){}
-    // @Override
-    // protected void attack(){}
+     @Override
+     public int attack(){
+         if (agility * 3 > (int)(Math.random()*(100+1))) return strength;
+         else return  0;
+     }
 }

@@ -1,6 +1,6 @@
 public abstract class Entity {
-    private int health, gold, agility, experience, strength;
-    private String name;
+    protected int health, gold, agility, experience, strength;
+    protected String name;
 
     protected abstract void move();
     //protected abstract void attack();
