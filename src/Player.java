@@ -17,7 +17,7 @@ public class Player extends Entity {
 
     }
     @Override
-    public void attack(){
-
+    public int attack(){
+        return 0;
     }
 }

@@ -1,14 +1,10 @@
-public class Monster extends Entity {
+public abstract class Monster extends Entity {
 
     Monster(){
-
+        System.out.println("Создан монстр-противник");
     }
-    @Override
-    public void move(){
-
-    }
-    @Override
-    public void attack(){
-
-    }
+    // @Override
+    // protected void move(){}
+    // @Override
+    // protected void attack(){}
 }

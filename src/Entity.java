@@ -2,8 +2,8 @@ public abstract class Entity {
     private int health, gold, agility, experience, strength;
     private String name;
 
-    public abstract void move();
-    public abstract void attack();
+    protected abstract void move();
+    //protected abstract void attack();
 
     public int getHealth() {
         return health;
@@ -51,5 +51,18 @@ public abstract class Entity {
 
     public void setStrength(int strength) {
         this.strength = strength;
+    }
+    protected int attack(){
+        //метод атаки с шансом успеха
+        if (agility * 3 > (int)(Math.random()*(100+1))) return strength;
+        else return  0;
+    }
+
+    @Override
+    public String toString() {
+        return "Entity{" +
+                "health=" + health +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
